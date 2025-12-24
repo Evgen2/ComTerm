@@ -35,7 +35,7 @@ int _tmain(int npar, _TCHAR* par[])
 
     if(npar > 1)
     { if( !_stricmp(par[1],"help") ||  (*par[1] == '-' && *(par[1]+1) == '?') )
-      {  printf("Usage: comTerm Nport [Bitrate [log] [F=%%x]]] [echo]\n");   
+      {  printf("Usage: comTerm Nport [Bitrate [log] [F=%%x]] [echo]\n");   
          exit(0);
       }
       rc = sscanf(par[1],"%i",&nport);
